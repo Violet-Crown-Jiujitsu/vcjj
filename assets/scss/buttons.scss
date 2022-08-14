@@ -1,0 +1,98 @@
+.btn,
+.notify_title span,
+.text-link {
+  font-weight: 700
+}
+
+.btn,
+a {
+  -o-transition: .3s;
+  transition: .3s
+}
+
+.btn,
+.text-link {
+  float: left;
+  text-transform: uppercase;
+  text-decoration: none
+}
+
+.btn {
+  font-size: 16px;
+  letter-spacing: .1px;
+  padding: 12px 35px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer
+}
+
+.btn.btn-outline,
+.btn.btn-outline.btn-color-white {
+  border: 1px solid #fff;
+  color: #fff
+}
+
+.btn.btn-outline.btn-color-white {
+  background: 0 0
+}
+
+.btn.btn-outline.btn-color-white:hover {
+  background: #fff;
+  color: #000
+}
+
+.btn.btn-outline.btn-color-black {
+  background: 0 0;
+  border: 1px solid #000;
+  color: #000
+}
+
+.btn.btn-outline.btn-color-black:hover {
+  background: #000;
+  color: #fff
+}
+
+.btn.btn-solid.btn-color-white {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000
+}
+
+.btn.btn-solid.btn-color-black,
+.btn.btn-solid.btn-color-white:hover {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff
+}
+
+.btn.btn-solid.btn-color-black:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000
+}
+
+.btn.btn-font-light {
+  color: #fff !important
+}
+
+.btn.btn-font-dark,
+.optin-right-box.dark-font .optin-box-header,
+.optin-right-box.dark-font .optin-box-sub-header,
+.optin-right-box.dark-font p,
+.optin-right-box.dark-font span {
+  color: #000 !important
+}
+
+.text-link {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  position: relative !important
+}
+
+.text-link svg {
+  float: right;
+  width: 15px;
+  height: auto;
+  margin: 1px 0 0 5px
+}
