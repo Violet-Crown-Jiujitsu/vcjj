@@ -3,14 +3,78 @@
     <div class="banner-bg"></div>
     <div class="container">
       <div class="left-text">
-        <div data-aos="fade-right" class="aos-init aos-animate">
-          <span class="left-text-small-header">Austin MARTIAL ARTS &amp; FITNESS</span>
-          <h1 class="left-text-large-header">REACH YOUR FULL POTENTIAL WITH Violet Crown Jiu Jitsu</h1>
-          <p>
+        <div>
+          <span
+            class="left-text-small-header"
+            v-motion
+            :initial="{
+              opacity: 0,
+              y: 20,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 500,
+              },
+            }"
+            >Austin MARTIAL ARTS &amp; FITNESS</span
+          >
+          <h1
+            class="left-text-large-header"
+            v-motion
+            :initial="{
+              opacity: 0,
+              y: 30,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 500,
+                delay: 100,
+                ease: 'easeOut',
+              },
+            }"
+          >
+            REACH YOUR FULL POTENTIAL WITH Violet Crown Jiu Jitsu
+          </h1>
+          <p
+            v-motion
+            :initial="{
+              opacity: 0,
+              y: 40,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 500,
+                ease: 'easeOut',
+                delay: 150,
+              },
+            }"
+          >
             We at Violet Crown Jiu Jitsu are dedicated to your success. Get started today with our EXCLUSIVE offer!
             Request more information today to find out how you or your child can start training.
           </p>
-          <div class="banner-buttons">
+          <div
+            class="banner-buttons"
+            v-motion
+            :initial="{
+              opacity: 0,
+              y: 40,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 500,
+                ease: 'easeOut',
+                delay: 200,
+              },
+            }"
+          >
             <a class="btn btn-solid btn-color-primary btn-font- pop-opt">GET STARTED TODAY</a>
             <a href="/about-us/" class="btn btn-outline btn-color-tertiary btn-font-">LEARN MORE</a>
           </div>

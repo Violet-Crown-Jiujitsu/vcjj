@@ -1,5 +1,39 @@
 <script setup>
 import Review from '../../components/home/review.vue'
+const faqs = [
+  {
+    title: ' Do I need to know jiu-jitsu or Judo to study Brazilian Jiu Jitsu?',
+    content: `<p>
+                No, you don't. There are beginner classes available and many of the people who study Brazilian Jiu Jitsu
+                have no prior martial arts training.
+              </p>`,
+  },
+  {
+    title: 'Can Brazilian Jiu Jitsu help me defend myself?',
+    content: `<p>
+                Absolutely. It's one of the world's most effective self-defense techniques and is often preferred
+                because it teaches students to leverage their body weight to defeat larger opponents.
+              </p>`,
+  },
+  {
+    title: 'Do I need any special equipment to study Brazilian Jiu Jitsu?',
+    content: `<p>Students typically wear a Gi (two-piece garment worn by martial artists.) It is also typical for some
+                students may want to wear a mouth guard. It's a good idea to have a supply of athletic tape, as well.</p>`,
+  },
+  {
+    title: 'Will taking Brazilian Jiu Jitsu classes help me lose weight?',
+    content: `<p>
+                It can, particularly if you combine Brazilian Jiu Jitsu classes with a healthy diet and lifestyle.
+                Brazilian Jiu Jitsu provides a great, full-body workout that burns calories, builds muscles, and boosts
+                the metabolism.
+              </p>`,
+  },
+  {
+    title: 'As a beginner, do I need to spar?',
+    content: `<p>No. Beginner classes focus on teaching basic techniques and safety, and you can then work your way up to
+                controlled sparring in class.</p>`,
+  },
+]
 </script>
 <template>
   <div>
@@ -106,13 +140,7 @@ import Review from '../../components/home/review.vue'
     </section>
 
     <section id="section-3" class="module content-right-half-full-bleed all dark-font">
-      <div
-        class="content-left"
-        style="
-          background: url(https://marketmusclescdn.nyc3.digitaloceanspaces.com/wp-content/uploads/sites/603/2022/03/11183955/Photo-Jan-26-12-40-39-PM.webp)
-            no-repeat top center;
-        "
-      ></div>
+      <div class="content-left"></div>
       <div class="container">
         <div class="content-right aos-init aos-animate" data-aos="fade-left">
           <div class="content-sub-header"></div>
@@ -134,13 +162,7 @@ import Review from '../../components/home/review.vue'
     </section>
 
     <section id="section-4" class="module content-left-half-full-bleed all dark-font">
-      <div
-        class="content-right"
-        style="
-          background: url(https://marketmusclescdn.nyc3.digitaloceanspaces.com/wp-content/uploads/sites/603/2022/03/11184009/Photo-Jan-30-12-46-39-PM.webp)
-            no-repeat top center;
-        "
-      ></div>
+      <div class="content-right"></div>
       <div class="container">
         <div class="content-left aos-init" data-aos="fade-right">
           <div class="content-sub-header"></div>
@@ -162,13 +184,7 @@ import Review from '../../components/home/review.vue'
     </section>
 
     <section id="section-5" class="module content-right-half-full-bleed all dark-font bg-grey">
-      <div
-        class="content-left"
-        style="
-          background: url(https://marketmusclescdn.nyc3.digitaloceanspaces.com/wp-content/uploads/sites/603/2020/09/24161045/88358367-DSC_6438.webp)
-            no-repeat top center;
-        "
-      ></div>
+      <div class="content-left"></div>
       <div class="container">
         <div class="content-right aos-init" data-aos="fade-left">
           <div class="content-sub-header"></div>
@@ -190,245 +206,9 @@ import Review from '../../components/home/review.vue'
     </section>
 
     <Review />
-    <!-- FAQ -->
 
-    <section id="faq" class="module block_5f3a97e03ea57 faq-accordions dark-font p-t- p-b-">
-      <div class="container">
-        <div class="module-header aos-init aos-animate" data-aos="fade-down">
-          <div class="content-sub-header"></div>
-          <h2>FAQs</h2>
-        </div>
-        <div class="all-faqs aos-init aos-animate" data-aos="fade-up" style="position: relative; height: 393px">
-          <div class="faq-grid-sizer"></div>
-          <div class="indiv-faq" style="position: absolute; left: 0px; top: 0px">
-            <div class="faq-question">
-              Do I need to know jiu-jitsu or Judo to study Brazilian Jiu Jitsu?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                No, you don't. There are beginner classes available and many of the people who study Brazilian Jiu Jitsu
-                have no prior martial arts training.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" style="position: absolute; left: 687.5px; top: 0px">
-            <div class="faq-question">
-              Can Brazilian Jiu Jitsu help me defend myself?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Absolutely. It's one of the world's most effective self-defense techniques and is often preferred
-                because it teaches students to leverage their body weight to defeat larger opponents.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" style="position: absolute; left: 687.5px; top: 147px">
-            <div class="faq-question">
-              Do I need any special equipment to study Brazilian Jiu Jitsu?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Students typically wear a Gi (two-piece garment worn by martial artists.) It is also typical for some
-                students may want to wear a mouth guard. It's a good idea to have a supply of athletic tape, as well.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" style="position: absolute; left: 0px; top: 173px">
-            <div class="faq-question">
-              Will taking Brazilian Jiu Jitsu classes help me lose weight?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                It can, particularly if you combine Brazilian Jiu Jitsu classes with a healthy diet and lifestyle.
-                Brazilian Jiu Jitsu provides a great, full-body workout that burns calories, builds muscles, and boosts
-                the metabolism.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" style="position: absolute; left: 0px; top: 296px">
-            <div class="faq-question">
-              As a beginner, do I need to spar?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                No. Beginner classes focus on teaching basic techniques and safety, and you can then work your way up to
-                controlled sparring in class.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- FAQ -->
+    <Faqs :faqs="faqs" />
 
     <section
       id="more-cta"

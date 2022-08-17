@@ -33,8 +33,8 @@ const canonical = ['']
 
     <!-- image -->
 
-    <Meta property="og:image" content="/assets/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
-    <Meta name="twitter:image" content="/assets/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
+    <Meta property="og:image" content="/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
+    <Meta name="twitter:image" content="/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
     <Meta property="og:image:width" content="1200" />
     <Meta property="og:image:height" content="630" />
 

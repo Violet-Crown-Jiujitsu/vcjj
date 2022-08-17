@@ -1,5 +1,39 @@
 <script setup>
 import Review from '../../components/home/review.vue'
+const faqs = [
+  {
+    title: 'Do I have to be in good shape to study Muay Thai?',
+    content: `<p>
+                No. In fact, Muay Thai is one of the best workouts you can do to get in shape if you’re not happy with
+                your current fitness level. It works your entire body. Over time, you can increase the intensity of your
+                workouts to continue to challenge your body.
+              </p>`,
+  },
+  {
+    title: 'Will Muay Thai workouts help me lose weight?',
+    content: `<p>
+                Yes. However, it is important to combine Muay Thai with a healthy diet and lifestyle if you want your
+                body to be lean and strong. Muay Thai burns a lot of calories but you may have problems if you eat a
+                diet high in sugar and processed foods.
+              </p>`,
+  },
+  {
+    title: 'Is Muay Thai good for self-defense?',
+    content: `<p>
+                Yes. Muay Thai teaches students to leverage their own body weight as well as their opponent’s weight.
+                Students learn practical moves that are ideal for self-defense – and Muay Thai also builds good
+                reflexes, which are essential in a fight.
+              </p>`,
+  },
+  {
+    title: 'Is Muay Thai dangerous?',
+    content: ` <p>
+                Muay Thai is not dangerous for beginners, especially if you wear the proper equipment. If you choose to
+                compete, there is some risk of injury. Here again, though, proper protection can help you minimize
+                injuries in the ring.
+              </p>`,
+  },
+]
 </script>
 <template>
   <div>
@@ -170,201 +204,7 @@ import Review from '../../components/home/review.vue'
     <Review />
 
     <!-- FAQ -->
-    <section id="faq" class="module faq-accordions dark-font p-t- p-b-">
-      <div class="container">
-        <div class="module-header aos-init aos-animate" data-aos="fade-down">
-          <div class="content-sub-header"></div>
-          <h2>FAQS</h2>
-        </div>
-        <div class="all-faqs aos-init aos-animate" data-aos="fade-up">
-          <div class="indiv-faq" tabindex="0">
-            <div class="faq-question">
-              Do I have to be in good shape to study Muay Thai?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                No. In fact, Muay Thai is one of the best workouts you can do to get in shape if you’re not happy with
-                your current fitness level. It works your entire body. Over time, you can increase the intensity of your
-                workouts to continue to challenge your body.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" tabindex="0">
-            <div class="faq-question">
-              Will Muay Thai workouts help me lose weight?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Yes. However, it is important to combine Muay Thai with a healthy diet and lifestyle if you want your
-                body to be lean and strong. Muay Thai burns a lot of calories but you may have problems if you eat a
-                diet high in sugar and processed foods.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" tabindex="0">
-            <div class="faq-question">
-              Is Muay Thai good for self-defense?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Yes. Muay Thai teaches students to leverage their own body weight as well as their opponent’s weight.
-                Students learn practical moves that are ideal for self-defense – and Muay Thai also builds good
-                reflexes, which are essential in a fight.
-              </p>
-            </div>
-          </div>
-          <div class="indiv-faq" tabindex="0">
-            <div class="faq-question">
-              Is Muay Thai dangerous?
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 256 256"
-                style="enable-background: new 0 0 256 256"
-                xml:space="preserve"
-              >
-                <g>
-                  <g>
-                    <polygon
-                      points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"
-                    ></polygon>
-                  </g>
-                </g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-              </svg>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Muay Thai is not dangerous for beginners, especially if you wear the proper equipment. If you choose to
-                compete, there is some risk of injury. Here again, though, proper protection can help you minimize
-                injuries in the ring.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <Faqs :faqs="faqs" />
     <section
       id="more-cta"
       class="module block_5f3a912008385 content-columns all light-font parallax p-t-large p-b-large"
@@ -450,27 +290,6 @@ import Review from '../../components/home/review.vue'
   .content-left {
     background: url(/images/muay/muay-thai-5.webp) center;
     background-size: cover;
-  }
-}
-
-.all-faqs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .indiv-faq {
-    width: 100%;
-
-    @media (min-width: 960px) {
-      width: 45%;
-    }
-  }
-}
-
-.indiv-faq:focus {
-  .faq-answer {
-    display: block;
   }
 }
 </style>
