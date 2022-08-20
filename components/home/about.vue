@@ -17,7 +17,7 @@ const motionInstance = useMotion(target, {
 })
 </script>
 <template>
-  <section id="" class="module content-centered all dark-font normal-font p-t-large p-b-large" ref="target">
+  <section id="" class="module content-centered all dark-font normal-font p-t-large p-b-large">
     <div class="container">
       <div class="content-centered-container font-center aos-init" data-aos="fade-down">
         <div class="content-sub-header">WELCOME TO</div>

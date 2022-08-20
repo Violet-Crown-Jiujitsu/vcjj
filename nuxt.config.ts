@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
-  modules: ['@formkit/nuxt', '@vueuse/nuxt'],
+  modules: ['@formkit/nuxt', '@vueuse/nuxt', 'nuxt-schema-org'],
   buildModules: [
     [
       '@pinia/nuxt',
@@ -31,6 +31,10 @@ export default defineNuxtConfig({
         }),
       },
     },
+  },
+  schemaOrg: {
+    // set to your production domain
+    canonicalHost: 'https://violetcrownjiujitsu.com',
   },
 })
 // SCSS file in the project

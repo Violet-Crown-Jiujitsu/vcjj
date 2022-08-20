@@ -8,7 +8,7 @@ const value = ref([])
       <p>Select classes you would like info about and we'll get back to you asap!</p>
     </div>
     <div class="form-wrap">
-      <FormKit type="form" name="VCJJ - Contact Form" method="POST" data-netlify="true">
+      <FormKit type="form" name="VCJJ - Contact Form" method="POST" data-netlify="true" netlify>
         <!-- Name -->
         <FormKit type="text" name="name" placeholder="Full Name *" validation="required" validation-visibility="blur" />
         <!-- Email -->
@@ -36,6 +36,7 @@ const value = ref([])
           v-model="value"
           type="checkbox"
           label="Select a Program"
+          button-class="$reset btn btn-outline btn-color-tertiary btn-font-"
           :options="['No Gi BJJ', 'Gi BJJ', 'Teen Bjj', 'Muay Thai']"
         />
       </FormKit>
@@ -67,7 +68,7 @@ const value = ref([])
         height: 3rem;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid #9e9e9e;
+        border-bottom: 1px solid rgb(158 158 158 / 38%);
         border-radius: 0;
         outline: none;
         width: 100%;
@@ -94,12 +95,21 @@ const value = ref([])
     }
   }
   &[data-family='box'] {
+    padding-top: 0.8rem;
     .formkit-fieldset {
       .formkit-legend {
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
         color: #686868;
+        border-bottom: 1px solid rgb(158 158 158 / 38%);
       }
       .formkit-options {
         display: inline-block;
+        padding-top: 1.2rem;
+        .formkit-option {
+          margin-bottom: 0.5rem;
+        }
         .formkit-wrapper {
           position: relative;
         }
@@ -149,12 +159,34 @@ const value = ref([])
         }
         .formkit-label {
           display: inline-block;
-          text-indent: 1.5em;
+          text-indent: 2em;
           min-width: calc(1em + 2px);
           font-size: 1rem;
           color: #686868;
         }
       }
+    }
+  }
+}
+.formkit-actions {
+  padding-top: 1rem;
+  .formkit-input {
+    border: none;
+    outline: none;
+    color: white;
+    background: $purple-4;
+    padding: 12px 35px;
+    height: 42px;
+    width: 170px;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      background-color: $purple-5;
     }
   }
 }

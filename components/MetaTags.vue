@@ -12,8 +12,6 @@ defineProps({
     default: false,
   },
 })
-
-const canonical = ['']
 </script>
 <template>
   <Head>

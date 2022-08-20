@@ -219,5 +219,8 @@ section {
       }
     }
   }
+  @media (max-width: 800px) {
+    grid-template-columns: auto;
+  }
 }
 </style>

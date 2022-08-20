@@ -12,34 +12,18 @@ const images = [
 </script>
 <template>
   <section>
-    <div
-      class="home-slider"
-      v-motion
-      :initial="{
-        y: 100,
-        opacity: 0,
-      }"
-      :enter="{
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring',
-          stiffness: 250,
-          damping: 25,
-          mass: 0.5,
-        },
-      }"
-    >
+    <div class="home-slider">
       <div v-for="(img, i) in images">
         <img :src="img" :alt="`gallery-img-${i}`" />
       </div>
     </div>
   </section>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .home-slider {
   display: flex;
   width: 100%;
+  overflow: hidden;
   > div {
     flex: 1 0 25%;
     img {

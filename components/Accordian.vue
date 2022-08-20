@@ -28,10 +28,11 @@ function toggle() {
   const { value } = flag
   flag.value = !value
 }
+//  <div class="details" ref="wrap" @click="toggle" :style="{ 'max-height': flag ? SHeight : dHeight }">
 </script>
 <template>
-  <div class="details" ref="wrap" @click="toggle" :style="{ 'max-height': flag ? SHeight : dHeight }">
-    <div class="summary" ref="summary">{{ title }} <i class="fa fa-angle-down"></i></div>
+  <div class="details" ref="wrap" @click="toggle">
+    <div class="summary" ref="summary">{{ title }}</div>
     <div
       class="content"
       ref="info"
