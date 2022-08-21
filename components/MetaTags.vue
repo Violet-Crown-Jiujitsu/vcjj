@@ -12,8 +12,6 @@ defineProps({
     default: false,
   },
 })
-
-const canonical = ['']
 </script>
 <template>
   <Head>
@@ -33,8 +31,8 @@ const canonical = ['']
 
     <!-- image -->
 
-    <Meta property="og:image" content="/assets/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
-    <Meta name="twitter:image" content="/assets/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
+    <Meta property="og:image" content="/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
+    <Meta name="twitter:image" content="/images/og-image/Violet-Crown-Jiu-Jitsu-facebook-1.jpg" />
     <Meta property="og:image:width" content="1200" />
     <Meta property="og:image:height" content="630" />
 
@@ -50,5 +48,7 @@ const canonical = ['']
     <!-- robots -->
     <Meta name="robots" v-if="noFollow" content="noindex,nofollow" />
     <!-- <Meta name="google-site-verification" content="" /> -->
+    <SchemaOrgWebSite name="Harlan Wilton" />
+    <SchemaOrgWebPage />
   </Head>
 </template>

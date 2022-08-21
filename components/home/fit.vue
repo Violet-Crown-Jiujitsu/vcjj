@@ -16,16 +16,22 @@
           classes today!
         </p>
         <div class="content-buttons">
-          <a href="program/no-gi-adult-bjj/" class="btn btn-solid btn-color-primary btn-font-"
-            >View Our No Gi Adult BJJ Program</a
-          >
+          <a href="program/no-gi-adult-bjj/" class="btn btn-solid btn-color-primary btn-font-">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .bg {
   background: url(/images/home/fit.webp) no-repeat top center;
+}
+.content-buttons {
+  padding-top: 2rem;
+}
+@media (max-width: 960px) {
+  .content-left {
+    padding: 3rem 1rem;
+  }
 }
 </style>

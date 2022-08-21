@@ -1,11 +1,5 @@
 <template>
-  <footer
-    class="light-font footer-four-columns footer-push"
-    style="
-      background: url(https://marketmusclescdn.nyc3.digitaloceanspaces.com/wp-content/uploads/sites/603/2022/02/23202122/Violet-Crown-Jiu-Jitsu-footer-1-scaled.webp)
-        no-repeat center center;
-    "
-  >
+  <footer class="light-font footer-four-columns footer-push">
     <div class="footer-top-bar">
       <div class="container">
         <div class="footer-columns">
@@ -96,11 +90,6 @@
         <div class="footer-bottom-bar-left">
           © Violet Crown Jiu Jitsu | <a href="/privacy-policy">Privacy Policy</a>
         </div>
-        <!-- <div class="footer-bottom-bar-right">
-          Fitness &amp; Martial Arts Websites by <a href="https://marketmuscles.com" target="_blank"
-            alt="Fitness &amp; Martial Arts Websites"><img src="/images/logos/mm-logo.png" class="lazyloaded"
-              data-ll-status="loaded"></a>
-        </div> -->
       </div>
     </div>
   </footer>
@@ -108,173 +97,118 @@
 <style lang="scss" scoped>
 .footer-col {
   float: left;
-}
-
-.footer-col:first-child {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.footer-col:nth-child(4) ul {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-col:nth-child(4) ul li {
-  float: left;
-  width: 100%;
-  list-style-type: none;
-  padding: 0 0 5px;
-}
-
-.footer-col:nth-child(4) ul li ul {
-  padding: 5px 0 0 30px;
-}
-
-.footer-col:nth-child(4) ul li ul li {
-  float: left;
-  width: 100%;
-}
-
-.footer-col:nth-child(4) ul li a {
-  color: #fff;
-}
-
-@media (min-width: 960px) {
-  .footer-col {
-    width: 25%;
-    padding: 0 40px 0 0;
-  }
-
-  .footer-col:first-child {
-    width: 20%;
-    margin: 0;
-  }
-
-  .footer-col:nth-child(2) {
-    width: 40%;
-  }
-
-  .footer-col:nth-child(2) p {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 22px;
-  }
-
-  .footer-col:nth-child(3),
-  .footer-col:nth-child(4) {
-    width: 20%;
-  }
-
-  .footer-col img {
+  &:first-child {
+    margin-bottom: 20px;
     width: 100%;
   }
-}
-
-.footer-col h5 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.col-indiv-location,
-.col-indiv-location .location-address,
-.col-indiv-location .location-email,
-.col-indiv-location .location-phone,
-.col-indiv-location .location-social,
-.col-indiv-location .location-title,
-.footer-col h5 {
-  width: 100%;
-  float: left;
-}
-
-.footer-col h5 {
-  margin: 0 0 5px;
-  color: #fff;
-}
-
-.footer-col img {
-  max-width: 240px;
-  height: auto;
-}
-
-.col-indiv-location {
-  font-size: 13px;
-  margin: 0 0 25px;
-}
-
-.col-indiv-location .location-title {
-  font-weight: 700;
-  font-size: 15px;
-  text-align: left;
-  margin: 0 0 5px;
-}
-
-.col-indiv-location .location-address a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.col-indiv-location .location-email i,
-.col-indiv-location .location-phone i {
-  color: #fff;
-  margin: 0 3px 0 0;
-}
-
-.col-indiv-location .location-email a,
-.col-indiv-location .location-phone a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-}
-
-.col-indiv-location .location-phone {
-  margin: 8px 0;
-}
-
-.col-indiv-location .location-social {
-  font-size: 20px;
-  margin: 13px 0 0;
-}
-
-.col-indiv-location .location-social a {
-  color: #fff;
-  margin: 0 3px;
-}
-
-footer {
-  background-size: cover !important;
-}
-
-footer.light-font,
-footer.light-font a {
-  color: #fff !important;
-}
-
-footer {
-  float: left;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  footer.footer-push {
-    margin-bottom: 58px;
+  &:nth-child(4) {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        float: left;
+        width: 100%;
+        list-style-type: none;
+        padding: 0 0 5px;
+        ul {
+          padding: 5px 0 0 30px;
+          li {
+            float: left;
+            width: 100%;
+          }
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
+    float: left;
+    margin: 0 0 5px;
+    color: #fff;
+  }
+  img {
+    max-width: 240px;
+    height: auto;
   }
 }
-
-footer.light-font .location-title {
-  color: #fff;
+.col-indiv-location {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  margin: 0 0 25px;
+  .location-address {
+    width: 100%;
+    float: left;
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .location-email {
+    width: 100%;
+    float: left;
+    i {
+      color: #fff;
+      margin: 0 3px 0 0;
+    }
+    a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+    }
+  }
+  .location-phone {
+    width: 100%;
+    float: left;
+    margin: 8px 0;
+    i {
+      color: #fff;
+      margin: 0 3px 0 0;
+    }
+    a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+    }
+  }
+  .location-social {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin: 13px 0 0;
+    a {
+      color: #fff;
+      margin: 0 3px;
+    }
+  }
+  .location-title {
+    width: 100%;
+    float: left;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: left;
+    margin: 0 0 5px;
+  }
 }
-
+footer.light-font {
+  color: #fff !important;
+  a {
+    color: #fff !important;
+  }
+  .location-title {
+    color: #fff;
+  }
+}
+footer {
+  float: left;
+  width: 100%;
+}
 .footer-top-bar {
   padding: 40px 0;
 }
-
-@media (min-width: 960px) {
-  .footer-top-bar {
-    padding: 80px 0;
-  }
-}
-
 .footer-bottom-bar {
   float: left;
   width: 100%;
@@ -282,98 +216,109 @@ footer.light-font .location-title {
   font-size: 13px;
   color: #fff;
   position: relative;
-}
-
-.footer-bottom-bar .footer-bottom-overlay {
-  position: absolute;
-  background: #000;
-  opacity: 0.3;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.footer-bottom-bar .container {
-  position: relative;
-  z-index: 2;
-}
-
-.footer-bottom-bar .footer-bottom-bar-left {
-  float: left;
-  width: 100%;
-  margin: 0 0 6px;
-  text-align: center;
-}
-
-@media (min-width: 960px) {
-  .footer-bottom-bar .footer-bottom-bar-left {
-    float: left;
-    width: 50%;
-    text-align: left;
-    margin: 0;
-  }
-}
-
-.footer-bottom-bar .footer-bottom-bar-left a {
-  color: #fff !important;
-  text-decoration: none !important;
-}
-
-.footer-bottom-bar .footer-bottom-bar-right a {
-  text-decoration: none;
-}
-
-.footer-bottom-bar .footer-bottom-bar-right {
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-
-@media (min-width: 960px) {
-  .footer-bottom-bar .footer-bottom-bar-right {
-    float: left;
-    width: 50%;
-    text-align: right;
-  }
-}
-
-.footer-bottom-bar .footer-bottom-bar-right img {
-  height: 26px;
-  width: auto;
-  clear: both;
-  margin: 7px auto 0;
-  display: table;
-}
-
-@media (min-width: 960px) {
-  .footer-bottom-bar .footer-bottom-bar-right img {
-    margin: -5px 0 0 10px;
-    float: right;
-    clear: none;
-    display: inline-block;
-  }
-}
-
-.footer-bottom-bar .footer-bottom-bar-right a {
-  color: #47b965;
-  font-weight: 700;
-}
-
-.footer-bottom-bar {
   background: #742480;
+  .footer-bottom-overlay {
+    position: absolute;
+    background: #000;
+    opacity: 0.3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-bottom-bar-left {
+    float: left;
+    width: 100%;
+    margin: 0 0 6px;
+    text-align: center;
+    a {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+  }
+  .footer-bottom-bar-right {
+    a {
+      text-decoration: none;
+      color: #47b965;
+      font-weight: 700;
+    }
+    float: left;
+    width: 100%;
+    text-align: center;
+    img {
+      height: 26px;
+      width: auto;
+      clear: both;
+      margin: 7px auto 0;
+      display: table;
+    }
+  }
 }
-
 .footer-four-columns {
-  background: #742480;
+  background-color: #742480;
+  background-image: url(/images/Violet-Crown-Jiu-Jitsu-footer-1-scaled.webp);
+  background-size: cover;
+  background-position: center;
   color: rgba(255, 255, 255, 0.7);
+  a {
+    color: white;
+    &:hover {
+      color: #a42484 !important;
+    }
+  }
 }
-
-.footer-four-columns a {
-  color: white;
-}
-
-.footer-four-columns a:hover {
-  color: #a42484 !important;
+@media (min-width: 960px) {
+  .footer-col {
+    width: 25%;
+    padding: 0 40px 0 0;
+    &:first-child {
+      width: 20%;
+      margin: 0;
+    }
+    &:nth-child(2) {
+      width: 40%;
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+    &:nth-child(3) {
+      width: 20%;
+    }
+    &:nth-child(4) {
+      width: 20%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .footer-top-bar {
+    padding: 80px 0;
+  }
+  .footer-bottom-bar {
+    .footer-bottom-bar-left {
+      float: left;
+      width: 50%;
+      text-align: left;
+      margin: 0;
+    }
+    .footer-bottom-bar-right {
+      float: left;
+      width: 50%;
+      text-align: right;
+      img {
+        margin: -5px 0 0 10px;
+        float: right;
+        clear: none;
+        display: inline-block;
+      }
+    }
+  }
 }
 </style>

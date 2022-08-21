@@ -11,3 +11,34 @@
 @import './module.scss';
 @import './banner.scss';
 @import './swipper.scss';
+
+
+
+.btn {
+  letter-spacing: 1px;
+
+  &.btn-solid {
+    &.btn-color-primary {
+      background: $purple-4;
+      border: 1px solid $purple-4;
+
+      &:hover {
+        background: $purple-5;
+        border: 1px solid $purple-5;
+      }
+    }
+  }
+
+  &.btn-outline {
+    &.btn-color-tertiary {
+      border: 1px solid $purple-4;
+      color: $purple-4;
+
+      &:hover {
+        color: white;
+        background: $purple-4;
+        border: 1px solid $purple-4;
+      }
+    }
+  }
+}

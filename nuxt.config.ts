@@ -1,44 +1,39 @@
 import { defineNuxtConfig } from 'nuxt'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // modules: ["@formkit/nuxt"],
-  modules: ['@formkit/nuxt'],
-  components: {
-    dirs: ['~/components'],
-  },
-  head: {
-    script: [
-      {
-        src: '/js/index.js',
-        body: true,
-      },
-    ],
-  },
+  modules: ['@pinia/nuxt', '@formkit/nuxt', '@vueuse/nuxt', 'nuxt-schema-org'],
+  // buildModules: [
+  //   [
+  //     '@pinia/nuxt',
+  //     {
+  //       autoImports: ['defineStore', 'acceptHMRUpdate'],
+  //     },
+  //   ],
+  // ],
+  css: ['@/assets/scss/index.scss'],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/assets/scss/index.scss";',
+          additionalData: '@import "@/assets/scss/vars.scss";',
         },
       },
     },
   },
-  css: [
-    // SCSS file in the project
-    '@formkit/themes/genesis',
-  ],
-  buildModules: [
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: [
-          // automatically imports `usePinia()`
-          'defineStore',
-          // automatically imports `usePinia()` as `usePiniaStore()`
-          ['defineStore', 'definePiniaStore'],
-        ],
+  vue: {
+    compilerOptions: {
+      directiveTransforms: {
+        motion: () => ({
+          props: [],
+          needRuntime: true,
+        }),
       },
-    ],
-  ],
+    },
+  },
+  schemaOrg: {
+    // set to your production domain
+    canonicalHost: 'https://violetcrownjiujitsu.com',
+  },
 })
+// SCSS file in the project
+// '@formkit/themes/genesis',
