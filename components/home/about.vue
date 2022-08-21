@@ -1,21 +1,4 @@
-<script setup>
-const target = ref()
-const motionInstance = useMotion(target, {
-  initial: {
-    opacity: 0,
-    y: 300,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'keyframes',
-      duration: 500,
-      ease: 'easeInOut',
-    },
-  },
-})
-</script>
+<script setup></script>
 <template>
   <section id="" class="module content-centered all dark-font normal-font p-t-large p-b-large">
     <div class="container">

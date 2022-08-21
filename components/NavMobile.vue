@@ -41,11 +41,6 @@ afterEach((to, from) => set(menuOpen, false))
                   </ul>
                 </template>
               </li>
-              <li class="main-link">
-                <a href="mailto:rudyrexx@gmail.com?subject=Connect with Violet Crown Jiu Jitsu" class="link"
-                  ><span>Contact</span></a
-                >
-              </li>
             </ul>
           </div>
         </Transition>

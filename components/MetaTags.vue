@@ -48,5 +48,7 @@ defineProps({
     <!-- robots -->
     <Meta name="robots" v-if="noFollow" content="noindex,nofollow" />
     <!-- <Meta name="google-site-verification" content="" /> -->
+    <SchemaOrgWebSite name="Harlan Wilton" />
+    <SchemaOrgWebPage />
   </Head>
 </template>

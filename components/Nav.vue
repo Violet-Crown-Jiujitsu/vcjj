@@ -12,7 +12,7 @@ const siteLinks = reactive([
     ],
   },
   { label: 'Schedule', path: '/schedule' },
-  // { label: 'Contact', path: '/location/austin-tx' },
+  { label: 'Contact', path: '/location/austin-tx' },
 ])
 </script>
 <template>

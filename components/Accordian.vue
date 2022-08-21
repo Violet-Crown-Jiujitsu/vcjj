@@ -33,22 +33,7 @@ function toggle() {
 <template>
   <div class="details" ref="wrap" @click="toggle">
     <div class="summary" ref="summary">{{ title }}</div>
-    <div
-      class="content"
-      ref="info"
-      v-motion
-      :initial="{
-        opacity: 0,
-      }"
-      :visible="{
-        opacity: 1,
-        transition: {
-          duration: 500,
-          ease: 'easeOut',
-        },
-      }"
-      v-html="content"
-    />
+    <div class="content" ref="info" v-html="content" />
   </div>
 </template>
 <style lang="scss" scoped>

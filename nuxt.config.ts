@@ -1,17 +1,15 @@
 import { defineNuxtConfig } from 'nuxt'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
-  modules: ['@formkit/nuxt', '@vueuse/nuxt', 'nuxt-schema-org'],
-  buildModules: [
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: ['defineStore', 'acceptHMRUpdate'],
-      },
-    ],
-  ],
+  modules: ['@pinia/nuxt', '@formkit/nuxt', '@vueuse/nuxt', 'nuxt-schema-org'],
+  // buildModules: [
+  //   [
+  //     '@pinia/nuxt',
+  //     {
+  //       autoImports: ['defineStore', 'acceptHMRUpdate'],
+  //     },
+  //   ],
+  // ],
   css: ['@/assets/scss/index.scss'],
   vite: {
     css: {

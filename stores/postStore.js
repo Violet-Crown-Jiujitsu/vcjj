@@ -1,3 +1,4 @@
+import { defineStore, acceptHMRUpdate } from 'pinia'
 export const usePostStore = defineStore('postStore', {
   state: () => ({
     posts: [

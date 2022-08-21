@@ -24,14 +24,6 @@ defineProps({
         </li>
       </ul>
     </li>
-    <li class="main-link">
-      <!-- <a href=":mailto:rudyrexx@gmail.com?subject=Connect with Violet Crown Jiu Jitsu" class="link"
-        ><span>Contact</span></a
-      > -->
-      <a href="mailto:bjgallardo@yahoo.com?subject=Connect with Violet Crown Jiu Jitsu" class="link"
-        ><span>Contact</span></a
-      >
-    </li>
   </ul>
 </template>
 <style lang="scss" scoped>
