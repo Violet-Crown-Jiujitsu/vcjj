@@ -13,6 +13,7 @@ specifiers:
   nuxt: 3.0.0-rc.8
   nuxt-schema-org: 1.0.0-beta.16
   nuxt-use-motion: 2.0.0-beta.11
+  pnpm: ^7.9.3
   sass: ^1.54.4
   vue-demi: ^0.13.7
 
@@ -24,6 +25,7 @@ dependencies:
   '@vueuse/core': 9.1.0
   '@vueuse/motion': 2.0.0-beta.12
   '@vueuse/nuxt': 9.1.0
+  pnpm: 7.9.3
 
 devDependencies:
   '@antfu/eslint-config': 0.26.1_eslint@8.22.0
@@ -5197,6 +5199,12 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
     dev: true
+
+  /pnpm/7.9.3:
+    resolution: {integrity: sha512-0hpAD1vtILw0i9gTN4ffagnScWMW9/avfZIKllBUd++fAvCss+hVgPPDd0HS9XcOT675gid4H9esGkbLdaFy+w==}
+    engines: {node: '>=14.6'}
+    hasBin: true
+    dev: false
 
   /popmotion/10.0.2:
     resolution: {integrity: sha512-8vgx02LL7Odk/kwSGigAnlPRLJK+Dfked571ZAHGzkxPNWThkU5mQX0xPmibIMAULZehWBV7hGN7LSCpaV3cfw==}
