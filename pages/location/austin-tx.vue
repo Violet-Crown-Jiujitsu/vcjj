@@ -10,10 +10,10 @@
           <p>Select classes you would like info about and we'll get back to you asap!</p>
         </div>
         <div class="form-wrap">
-          <!-- <Form /> -->
-          <ClientOnly>
+          <Form />
+          <!-- <ClientOnly>
             <GoogleForm />
-          </ClientOnly>
+          </ClientOnly> -->
         </div>
       </div>
     </section>
