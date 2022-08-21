@@ -1,45 +1,96 @@
 <script setup>
+import { get, set } from '@vueuse/core'
 const value = ref([])
+const view = ref('form')
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
+}
+
+function handleSubmit(credentials) {
+  fetch('/contactform.html', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: encode({
+      'form-name': 'VCJJ-Contact-Form',
+      credentials,
+    }),
+  })
+    .then(() => set(view, 'success'))
+    .catch((err) => {
+      set(view, 'error')
+      console.log('Error: %s', err)
+    })
+    .finally(() => {
+      console.log('formData: %s', JSON.stringify(credentials))
+    })
+}
 </script>
 <template>
   <aside>
-    <div class="title">
-      <h2>Contact Us</h2>
-      <p>Select classes you would like info about and we'll get back to you asap!</p>
-    </div>
-    <div class="form-wrap">
-      <FormKit type="form" name="VCJJ - Contact Form" method="POST" data-netlify="true" netlify>
-        <!-- Name -->
-        <FormKit type="text" name="name" placeholder="Full Name *" validation="required" validation-visibility="blur" />
-        <!-- Email -->
+    <div class="form">
+      <div class="title" v-if="view === 'error'">
+        <h2>There was an error submitting your form.</h2>
+        <p>Please try again</p>
+      </div>
+      <div class="title" v-if="view === 'success'">
+        <h2>Thank you!</h2>
+        <p>Your submission has been sent.</p>
+      </div>
+      <div class="title" v-else>
+        <h2>Contact Us</h2>
+        <p>Select classes you would like info about and we'll get back to you asap!</p>
+      </div>
+      <div class="form-wrap" v-if="view !== 'success'">
         <FormKit
-          type="email"
-          placeholder="Email *"
-          validation="required"
-          validation-visibility="blur"
-          :validation-messages="{
-            required: 'Please enter a valid email',
-          }"
-        />
-        <!-- Phone -->
-        <FormKit
-          type="tel"
-          placeholder="Phone number"
-          validation="matches:/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/"
-          :validation-messages="{
-            matches: 'Please enter a valid phone number',
-          }"
-          validation-visibility="blur"
-        />
-        <!-- Program Check Boxex -->
-        <FormKit
-          v-model="value"
-          type="checkbox"
-          label="Select a Program"
-          button-class="$reset btn btn-outline btn-color-tertiary btn-font-"
-          :options="['No Gi BJJ', 'Gi BJJ', 'Teen Bjj', 'Muay Thai']"
-        />
-      </FormKit>
+          type="form"
+          name="VCJJ-Contact-Form"
+          data-netlify-honeypot="bot-field"
+          data-netlify="true"
+          @submit="handleSubmit"
+        >
+          <!-- Name -->
+          <FormKit
+            type="text"
+            name="name"
+            placeholder="Full Name *"
+            validation="required"
+            validation-visibility="blur"
+          />
+          <!-- Email -->
+          <FormKit
+            type="email"
+            placeholder="Email *"
+            validation="required"
+            validation-visibility="blur"
+            :validation-messages="{
+              required: 'Please enter a valid email',
+            }"
+          />
+          <!-- Phone -->
+          <FormKit
+            type="tel"
+            placeholder="Phone number"
+            validation="matches:/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/"
+            :validation-messages="{
+              matches: 'Please enter a valid phone number',
+            }"
+            validation-visibility="blur"
+          />
+          <!-- Program Check Boxex -->
+          <FormKit
+            v-model="value"
+            type="checkbox"
+            label="Select a Program"
+            button-class="$reset btn btn-outline btn-color-tertiary btn-font-"
+            :options="['No Gi BJJ', 'Gi BJJ', 'Teen Bjj', 'Muay Thai']"
+          />
+        </FormKit>
+      </div>
     </div>
   </aside>
 </template>

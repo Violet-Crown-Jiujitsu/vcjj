@@ -5,10 +5,10 @@
     <SmallHeader title="Austin, TX" />
     <section id="" class="module content-centered large-font p-t-large p-b-large">
       <div class="container">
-        <div class="title">
+        <!-- <div class="title">
           <h2>Contact Us</h2>
           <p>Select classes you would like info about and we'll get back to you asap!</p>
-        </div>
+        </div> -->
         <div class="form-wrap">
           <Form />
           <!-- <ClientOnly>
