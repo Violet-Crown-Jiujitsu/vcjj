@@ -22,6 +22,7 @@
     "@vueuse/components": "^9.1.0",
     "@vueuse/core": "^9.1.0",
     "@vueuse/motion": "2.0.0-beta.12",
-    "@vueuse/nuxt": "^9.1.0"
+    "@vueuse/nuxt": "^9.1.0",
+    "pnpm": "^7.9.3"
   }
 }
