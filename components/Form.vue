@@ -57,6 +57,7 @@ function handleSubmit(credentials) {
           <FormKit
             type="text"
             name="name"
+            id="name"
             placeholder="Full Name *"
             validation="required"
             validation-visibility="blur"
@@ -64,6 +65,8 @@ function handleSubmit(credentials) {
           <!-- Email -->
           <FormKit
             type="email"
+            name="email"
+            id="email"
             placeholder="Email *"
             validation="required"
             validation-visibility="blur"
@@ -74,6 +77,8 @@ function handleSubmit(credentials) {
           <!-- Phone -->
           <FormKit
             type="tel"
+            name="phone"
+            id="phone"
             placeholder="Phone number"
             validation="matches:/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/"
             :validation-messages="{
@@ -85,6 +90,8 @@ function handleSubmit(credentials) {
           <FormKit
             v-model="value"
             type="checkbox"
+            name="class"
+            id="class"
             label="Select a Program"
             button-class="$reset btn btn-outline btn-color-tertiary btn-font-"
             :options="['No Gi BJJ', 'Gi BJJ', 'Teen Bjj', 'Muay Thai']"
