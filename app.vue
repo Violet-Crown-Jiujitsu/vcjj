@@ -25,7 +25,12 @@ useSchemaOrg([
       <NuxtLoadingIndicator />
       <Nav />
       <NuxtPage />
-      <Footer />
+      <!-- <Footer /> -->
     </NuxtLayout>
   </div>
 </template>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
