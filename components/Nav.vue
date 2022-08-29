@@ -26,8 +26,8 @@ const siteLinks = reactive([
       </div>
 
       <!-- Nav Links -->
-      <NavDesktop :siteLinks="siteLinks" class="hide-mobile" />
-      <NavMobile :siteLinks="siteLinks" class="show-mobile" />
+      <!-- <NavDesktop :siteLinks="siteLinks" class="hide-mobile" />
+      <NavMobile :siteLinks="siteLinks" class="show-mobile" /> -->
     </nav>
   </header>
 </template>

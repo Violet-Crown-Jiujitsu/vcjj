@@ -1,97 +1,83 @@
 <template>
-  <section id="" class="module banner banner-left-aligned dark-font capitalize-font header-normal">
-    <div class="banner-bg"></div>
-    <div class="container">
-      <div class="left-text">
-        <div>
-          <span class="left-text-small-header">Austin MARTIAL ARTS &amp; FITNESS</span>
-          <h1 class="left-text-large-header">REACH YOUR FULL POTENTIAL WITH Violet Crown Jiu Jitsu</h1>
-          <p>
-            We at Violet Crown Jiu Jitsu are dedicated to your success. Get started today with our EXCLUSIVE offer!
-            Request more information today to find out how you or your child can start training.
-          </p>
-          <div class="banner-buttons">
-            <a class="btn btn-solid btn-color-primary btn-font- pop-opt" href="/schedule">GET STARTED TODAY</a>
-            <a href="/about-us/" class="btn btn-outline btn-color-tertiary btn-font-">LEARN MORE</a>
-          </div>
-        </div>
+  <section id="" class="hero">
+    <div class="bg-img"></div>
+    <div class="wrapper">
+      <span class="">Welcome To</span>
+      <h1 class="">Violet Crown Jiu Jitsu</h1>
+      <p class="h6">
+        Our site is currently under construction. You can check out our schedule below and please contact us with any
+        questions!
+      </p>
+      <div class="banner-buttons">
+        <a class="btn btn-1" href="#schedule">View Schedule</a>
+        <a href="#contact" class="btn btn-2">Contact Us</a>
       </div>
     </div>
   </section>
 </template>
 <style lang="scss" scoped>
-.banner-bg {
-  background: url(/images/home-hero-bg.webp) no-repeat center center;
+.hero {
+  background: linear-gradient(225deg, #10002bff, #240046ff);
+  position: relative;
+  padding: 3rem;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-img {
+  background: url(/img/img-4.webp) no-repeat center center;
   background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
 }
-
-.banner-left-aligned {
+.wrapper {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  color: white;
+  span {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 0.5rem;
+  }
+  h1 {
+    letter-spacing: 2px;
+  }
+  p {
+    max-width: 600px;
+    padding: 0.5rem 0 3rem;
+  }
   .btn {
-    margin: 0 auto 10px;
-    display: table;
-    float: none;
-
-    &:last-child {
-      margin: 0;
+    border: 1px solid white;
+    width: 217px;
+    padding: 1rem;
+    &:first-of-type {
+      margin-right: 1.5rem;
+    }
+    &:hover {
+      opacity: 0.7;
     }
   }
-
-  .banner-buttons {
-    float: left;
-    width: 100%;
-    margin: 15px 0 0;
-  }
-}
-
-.left-text {
-  .btn {
-    margin: 0 auto 10px;
-    display: table;
-    float: none;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
-}
-
-@media (min-width: 960px) {
-  .banner-left-aligned {
-    .btn {
-      margin: 0 10px 0 0;
-      float: left;
-    }
-  }
-
-  .left-text {
-    .btn {
-      margin: 0 10px 0 0;
-      float: left;
-    }
-  }
-}
-@media (max-width: 960px) {
-  .banner {
-    background: linear-gradient(225deg, #10002bff, #240046ff);
-    .banner-bg {
-      opacity: 0.3;
-    }
-    .left-text {
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto;
-      float: none;
-      color: white;
-      .left-text-large-header {
-        text-shadow: none;
-      }
-      .btn.btn-solid.btn-color-primary,
-      .btn.btn-outline.btn-color-tertiary {
-        background: none !important;
-        border: 1px solid white;
-        color: white;
-        margin-top: 1rem !important;
-        width: 240px;
+  @media (max-width: 565px) {
+    .banner-buttons {
+      .btn {
+        float: none;
+        font-size: 14px;
+        display: block;
+        margin: 0;
+        &:last-of-type {
+          margin-top: 2rem;
+        }
       }
     }
   }
