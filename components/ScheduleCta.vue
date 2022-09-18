@@ -4,6 +4,7 @@ const schedule = [
     title: 'Mon',
     classes: [
       { title: 'No Gi BJJ Basics🥞 ', instructor: 'Eddy R.', time: '7am - 8am', mTime: '07:00', pills: ['No Gi'] },
+      { title: 'No Gi BJJ', instructor: 'Nasif M.', time: '12:30pm - 1:30pm', mTime: '12:30', pills: ['No Gi'] },
       {
         title: 'Teen No Gi BJJ',
         instructor: 'Rudy',
@@ -39,6 +40,7 @@ const schedule = [
     title: 'Wed',
     classes: [
       { title: 'Muay Thai', instructor: 'Andrew M.', time: '6pm - 7pm', mTime: '18:00', pills: ['Muay Thai'] },
+      { title: 'No Gi BJJ', instructor: 'Nasif M.', time: '12:30pm - 1:30pm', mTime: '12:30', pills: ['No Gi'] },
       { title: 'No Gi BJJ Basics', instructor: 'Rudy', time: '7pm - 8pm', mTime: '19:00', pills: ['No Gi'] },
       {
         title: 'No Gi Positional Sparring',
@@ -85,12 +87,15 @@ const schedule = [
     classes: [
       { title: 'Muay Thai', instructor: 'Andrew M.', time: '10am - 11am', mTime: '10:00', pills: ['Muay Thai'] },
       { title: 'Gi BJJ', instructor: 'Rudy', time: '11:15am - 12:00pm', mTime: '11:15', pills: ['Gi'] },
-      { title: 'No Gi BJJ', instructor: 'Rudy', time: '12pm - 1pm', mTime: '12:00', pills: ['No Gi'] },
+      { title: 'No Gi BJJ', instructor: 'Rudy', time: '12pm - 1pm', mTime: '12:00', pills: ['Teen'] },
     ],
   },
   {
     title: 'Sun',
-    classes: [{ title: 'No Gi BJJ', instructor: 'Nasif M.', time: '5pm', mTime: '16:00', pills: ['No Gi'] }],
+    classes: [
+      { title: 'Recovery Stretch', instructor: 'Maria', time: '4:15pm - 5pm', mTime: '4:15', pills: ['Recovery'] },
+      // { title: 'Breakjitsu', instructor: 'Rudy', time: '6:30pm - 7:30pm', mTime: '6:30', pills: ['Breakdance'] },
+    ],
   },
 ]
 const getPillClass = (pill) => pill.toLowerCase().split(' ').join('-')
@@ -233,6 +238,12 @@ section {
 
               &.wrestling {
                 background: $pink-3;
+              }
+              &.recovery {
+                background: $yellow-4;
+              }
+              &.breakdance {
+                background: $blue-6;
               }
             }
           }
