@@ -94,7 +94,7 @@ const schedule = [
     title: 'Sun',
     classes: [
       { title: 'Recovery Stretch', instructor: 'Maria', time: '4:15pm - 5pm', mTime: '4:15', pills: ['Recovery'] },
-      { title: 'Breakjitsu', instructor: 'Rudy', time: '6:30pm - 7:30pm', mTime: '6:30', pills: ['Breakdance'] },
+      // { title: 'Breakjitsu', instructor: 'Rudy', time: '6:30pm - 7:30pm', mTime: '6:30', pills: ['Breakdance'] },
     ],
   },
 ]
